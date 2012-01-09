@@ -31,7 +31,7 @@ public class MusicMoviesTableModel extends AbstractTableModel{
 			System.out.println(querySQL);
 	}
 	
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Class getColumnClass(int column) throws IllegalStateException {
 		if (!isConnected)
 			throw new IllegalStateException( "Not Connected to Database" );

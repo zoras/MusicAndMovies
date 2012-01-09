@@ -77,7 +77,8 @@ public class Splash extends JWindow {
   }
 
   private int loadTimerCounter;
-  private final static Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
+  @SuppressWarnings("unused")
+private final static Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
   private Timer loadTimer;
   private Login frame;
   private JLabel Image = new JLabel();
